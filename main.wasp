@@ -18,7 +18,7 @@ app whereDoWeEat {
     ("flowbite-react", "0.4.9")
   ],
   webSocket: {
-    fn: import { setupWebSocket } from "@server/websocket.js",
+    fn: import { webSocketFn } from "@server/websocket.js",
   }
 }
 

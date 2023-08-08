@@ -23,7 +23,7 @@ interface SocketData {
   user: User;
 }
 
-export const setupWebSocket: WebSocketDefinition<
+export const webSocketFn: WebSocketDefinition<
 ClientToServerEvents, 
 ServerToClientEvents,
 InterServerEvents,
