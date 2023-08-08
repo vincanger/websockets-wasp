@@ -16,19 +16,19 @@ Download and install Wasp
 curl -sSL https://get.wasp-lang.dev/installer.sh | sh
 ```
 
+
 Clone this repo...
 ```bash
-git clone https://github.com/wasp-lang/websockets-example-app.git
+git clone https://github.com/vincanger/websockets-wasp.git
 ```
 
 ....and navigate to the project directory
 ```bash
-cd websockets-example-app
+cd websockets-wasp
 ```
 
-make sure you have [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and start the DB
 ```bash
-wasp start db
+wasp db migrate-dev
 ```
   
 start the app! (this also installs all dependencies)
