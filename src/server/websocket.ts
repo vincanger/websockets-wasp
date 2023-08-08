@@ -1,4 +1,5 @@
 import { WebSocketDefinition } from "@wasp/webSocket"
+import { User } from "@wasp/entities"
 
 type PollState = {
   question: string
@@ -17,8 +18,17 @@ interface ClientToServerEvents {
   vote: (optionId: number) => void;
   askForStateUpdate: () => void;
 }
+interface InterServerEvents {}
+interface SocketData {
+  user: User;
+}
 
-export const setupWebSocket: WebSocketDefinition<ClientToServerEvents, ServerToClientEvents> = (io, context) => {
+export const setupWebSocket: WebSocketDefinition<
+ClientToServerEvents, 
+ServerToClientEvents,
+InterServerEvents,
+SocketData
+> = (io, context) => {
   const poll: PollState = {
     question: "What are eating for lunch ✨ Let's order",
     options: [
