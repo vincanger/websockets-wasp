@@ -2,6 +2,8 @@
 
 This is an example real-time, Websockets app built with Wasp in TypeScript to showcase the ease of use and integration of Websockets in Wasp. It's really NEAT!
 
+It is also a part of a tutorial, [How to build a real-time voting app with WebSockets, React, & Typescript](https://wasp-lang.dev/blog/2023/08/09/build-real-time-voting-app-websockets-react-typescript).
+
 [![wasp websockets app](image.png)](https://www.youtube.com/watch?v=Twy-2P0Co6M)
 
 You can try out a deployed version of the app here: https://websockets-voting-client.fly.dev/
