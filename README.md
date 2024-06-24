@@ -41,6 +41,7 @@ wasp start
 Check out the `src/server/websocket.ts` and `src/client/pages/MainPage.tsx` to see how Websockets are used in Wasp.
 
 ## Need Help?
+Read the tutorial: [How to build a real-time voting app with WebSockets, React, & Typescript](https://wasp-lang.dev/blog/2023/08/09/build-real-time-voting-app-websockets-react-typescript).
 
 Wasp Docs: https://wasp-lang.dev/docs
 
