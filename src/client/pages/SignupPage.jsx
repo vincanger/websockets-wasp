@@ -1,5 +1,5 @@
-import { SignupForm } from "@wasp/auth/forms/Signup";
+import { SignupForm } from 'wasp/client/auth';
 
 export function SignupPage() {
-  return <SignupForm />
+  return <SignupForm />;
 }

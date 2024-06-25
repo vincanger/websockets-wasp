@@ -4,8 +4,11 @@ app whereDoWeEat {
   },
   title: "where-do-we-eat",
   client: {
-    rootComponent: import { Layout } from "@src/client/Layout.jsx",
+    rootComponent: import { Layout } from "@src/client/Layout",
   },
+  // webSocket: {
+  //   fn: import { webSocketFn } from "@src/server/ws-server",
+  // },
   auth: {
     userEntity: User,
     onAuthFailedRedirectTo: "/login",
@@ -17,22 +20,20 @@ app whereDoWeEat {
 
 entity User {=psl
   id       Int     @id @default(autoincrement())
-  username String  @unique
-  password String
 psl=}
 
 route RootRoute { path: "/", to: MainPage }
 page MainPage {
-  component: import Main from "@src/client/MainPage.tsx",
+  component: import Main from "@src/client/MainPage",
   authRequired: true
 }
 
 route LoginRoute { path: "/login", to: LoginPage }
 page LoginPage {
-  component: import { LoginPage } from "@src/client/pages/LoginPage.jsx"
+  component: import { LoginPage } from "@src/client/pages/LoginPage"
 }
 
 route RegisterRoute { path: "/signup", to: RegisterPage }
 page RegisterPage {
-  component: import { SignupPage } from "@src/client/pages/SignupPage.jsx"
+  component: import { SignupPage } from "@src/client/pages/SignupPage"
 }

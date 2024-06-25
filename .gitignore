@@ -1,3 +1,5 @@
 /.wasp/
 /.env.server
 /.env.client
+node_modules/
+migrations/

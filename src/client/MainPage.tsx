@@ -1,7 +1,7 @@
+import { useAuth } from 'wasp/client/auth';
+
 import { useState, useMemo, useEffect } from 'react';
 import { Button, Card } from 'flowbite-react';
-
-import useAuth from 'wasp/auth/useAuth';
 
 const App = () => {
   const { data: user } = useAuth();
