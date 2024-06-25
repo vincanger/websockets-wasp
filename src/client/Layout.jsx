@@ -3,8 +3,8 @@ import "./Main.css";
 
 import { Flowbite, Dropdown, Navbar, Avatar } from "flowbite-react";
 import Logo from "./logo.png";
-import useAuth from "@wasp/auth/useAuth";
-import logout from "@wasp/auth/logout";
+import useAuth from "wasp/auth/useAuth";
+import logout from "wasp/auth/logout";
 
 const customTheme = {
   button: {
